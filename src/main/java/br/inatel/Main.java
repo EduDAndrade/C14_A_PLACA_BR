@@ -1,4 +1,4 @@
-package com.exemplo;
+package br.inatel;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;
