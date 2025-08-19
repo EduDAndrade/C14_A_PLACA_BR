@@ -35,7 +35,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.2.0</version>
                 <configuration>
-                    <mainClass>br.inatel.Main</mainClass>
+                    <mainClass>br.inatel.validador.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>

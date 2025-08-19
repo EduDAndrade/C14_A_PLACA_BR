@@ -1,4 +1,4 @@
-package br.inatel;
+package br.inatel.validador;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -21,7 +21,6 @@ public class Main {
         } else {
             System.out.println("Placa inválida");
         }
-
         sc.close();
     }
 }
