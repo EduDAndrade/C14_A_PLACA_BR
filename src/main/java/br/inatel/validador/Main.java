@@ -10,17 +10,17 @@ public class Main {
         System.out.println("Informe a placa:");
         String placa = sc.nextLine().toUpperCase();
 
-        String valid;
+        String valido;
 
         if (validator.isValid(placa)) {
-            valid = "Placa válida!";
+            valido = "Placa válida!";
         } else {
-            valid = "Placa inválida!";
+            valido = "Placa inválida!";
         }
 
-        System.out.println(valid);
+        System.out.println(valido);
 
-        HistoryManager.writeHistory(placa, valid);
+        HistoryManager.writeHistory(placa, valido);
 
         sc.close();
     }
