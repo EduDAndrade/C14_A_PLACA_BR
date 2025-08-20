@@ -8,13 +8,19 @@ public class Main {
         PlateValidator validator = new PlateValidator();
 
         System.out.println("Informe a placa:");
-        String placa = sc.nextLine();
+        String placa = sc.nextLine().toUpperCase();
+
+        String valid;
 
         if (validator.isValid(placa)) {
-            System.out.println("Placa válida!");
+            valid = "Placa válida!";
         } else {
-            System.out.println("Placa inválida!");
+            valid = "Placa inválida!";
         }
+
+        System.out.println(valid);
+
+        HistoryManager.writeHistory(placa, valid);
 
         sc.close();
     }
