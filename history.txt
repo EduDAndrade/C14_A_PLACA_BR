@@ -1,2 +1,3 @@
 ABC123 -> Placa inválida!
 BRA1B23 -> Placa válida!
+BRA2B22 -> Placa válida!

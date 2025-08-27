@@ -1,7 +1,5 @@
 package br.inatel.validador;
 
-import java.util.regex.Pattern;
-
 public class PlateValidator {
 
     // recebe a placa e retorna se é válida ou não
