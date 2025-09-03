@@ -13,7 +13,7 @@ public class HistoryManager {
         Path path = Paths.get(placa);
 
         try {
-            Files.write(path, Arrays.asList(caminho),
+            Files.write(path, Arrays.asList(linha),
                     StandardOpenOption.CREATE,
                     StandardOpenOption.APPEND);
         } catch (IOException e) {
