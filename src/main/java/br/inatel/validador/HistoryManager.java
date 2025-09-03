@@ -7,13 +7,13 @@ import java.util.Arrays;
 public class HistoryManager {
 
     public static void writeHistory(String placa, String valid){
-        String caminho = "history.t";
+        String caminho = "history.txt";
         String linha = placa;
 
         Path path = Paths.get(placa);
 
         try {
-            Files.write(path, Arrays.asList(linha),
+            Files.write(path, Arrays.asList(caminho),
                     StandardOpenOption.CREATE,
                     StandardOpenOption.APPEND);
         } catch (IOException e) {
