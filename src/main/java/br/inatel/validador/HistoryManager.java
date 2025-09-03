@@ -10,7 +10,7 @@ public class HistoryManager {
         String caminho = "history.t";
         String linha = placa;
 
-        Path path = Paths.get(caminho);
+        Path path = Paths.get(placa);
 
         try {
             Files.write(path, Arrays.asList(linha),
