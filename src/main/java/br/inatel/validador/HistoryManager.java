@@ -8,7 +8,7 @@ public class HistoryManager {
 
     public static void writeHistory(String placa, String valid){
         String caminho = "history.t";
-        String linha = placa + " -> " + valid;
+        String linha = placa;
 
         Path path = Paths.get(caminho);
 
