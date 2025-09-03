@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class HistoryManager {
 
     public static void writeHistory(String placa, String valid){
-        String caminho = "history.txt";
+        String caminho = "history.t";
         String linha = placa + " -> " + valid;
 
         Path path = Paths.get(caminho);
