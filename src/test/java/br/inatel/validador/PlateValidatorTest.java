@@ -2,11 +2,8 @@ package br.inatel.validador;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import java.io.IOException;
-import java.nio.file.*;
-import java.util.List;
 
-public class PlateValidatorTeste {
+public class PlateValidatorTest {
 
     // ========== CASOS POSITIVOS (7 testes) ==========
 

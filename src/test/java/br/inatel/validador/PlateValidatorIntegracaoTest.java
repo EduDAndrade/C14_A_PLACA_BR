@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.nio.file.*;
 import java.util.List;
 
-public class PlateValidatorIntegracaoTeste {
+public class PlateValidatorIntegracaoTest {
 
     @Test
     public void testeIntegracaoFluxoCompletoPlacaValida() throws IOException {
