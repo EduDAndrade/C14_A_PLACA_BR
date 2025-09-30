@@ -22,7 +22,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    needs: build
+    needs: build # Garante que o teste só rode após o build
     steps:
       - uses: actions/checkout@v4
       - name: Set up JDK 24
@@ -48,11 +48,11 @@ jobs:
 
       - name: Instalar dependências do Node.js
         run: npm install
-        working-directory: ./C14_A_PLACA_BR
+        working-directory: .
 
       - name: Executar script de envio de e-mail
         run: node send_email.js
-        working-directory: ./C14_A_PLACA_BR
+        working-directory: .
         env:
           EMAIL_EDUARDO: ${{ secrets.EMAIL_EDUARDO }}
           SENHA_PRA_EMAIL: ${{ secrets.SENHA_PRA_EMAIL }}
