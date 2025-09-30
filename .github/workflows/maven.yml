@@ -53,3 +53,9 @@ jobs:
         env:
           EMAIL_EDUARDO: ${{ secrets.EMAIL_EDUARDO }}
           SENHA_PRA_EMAIL: ${{ secrets.SENHA_PRA_EMAIL }}
+
+      - name: Upload do artefato (JAR)
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-jar
+          path: target/*.jar
