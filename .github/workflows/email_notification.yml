@@ -1,0 +1,28 @@
+name: Notificação por E-mail (JS)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  enviar_email_js:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v3
+
+    - name: Configurar Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Instalar dependências
+      run: npm install
+      working-directory: ./C14_A_PLACA_BR
+
+    - name: Executar script de envio de e-mail
+      run: node send_email.js
+      working-directory: ./C14_A_PLACA_BR
+      env:
+        EMAIL_EDUARDO: ${{ secrets.EMAIL_EDUARDO }}
+        SENHA_PRA_EMAIL: ${{ secrets.SENHA_PRA_EMAIL }}
+
